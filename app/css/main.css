@@ -1,0 +1,11 @@
+.calculate {
+  display: flex;
+  align-items: center;
+}
+
+.reduce,
+.increase {
+  border: 1px solid grey;
+  cursor: pointer;
+  padding: 5px;
+}

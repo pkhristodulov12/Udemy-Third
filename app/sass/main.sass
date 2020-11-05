@@ -1,0 +1,233 @@
+@import "_fonts.sass"
+@import "_colors.sass"
+
+
+.product-description
+	display: flex
+	flex-wrap: wrap
+	max-width: 1168px
+	margin: 6.25em auto
+	justify-content: space-between
+.product-card
+	flex-basis: 859px
+	@media screen and (min-width: 320px) and (max-width: 540px)
+		padding: 0 0.2em
+	&__categories
+		display: flex
+		flex-wrap: wrap
+		margin-top: 1.313em
+	&__title
+		font: 35px "Times New Roman Bold" 
+	&__item-category
+		font: 22px "Times New Roman Bold" 
+		@media screen and (min-width: 320px) and (max-width: 767px)
+			font: 14px "Times New Roman Bold"
+		&:first-of-type
+			flex: 3
+			@media screen and (min-width: 320px) and (max-width: 767px)
+				flex: 2
+		&:nth-of-type(2)
+			flex: 1
+		&:nth-of-type(3)
+			flex: 1
+		&:nth-of-type(4)
+			flex: 1
+
+
+.item
+	margin: 1.125em 0
+	padding-bottom: 1.125em
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		position: absolute
+		top: -17px
+		left: 0
+		right: 0
+		bottom: 0
+		background: $light-grey
+		height: 1px
+	&:last-of-type
+		padding-bottom: 0
+		&:after
+			content: ''
+			width: 100%
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -17px
+			background: $light-grey
+			height: 1px
+
+	&__inner-container
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		flex: 3
+		@media screen and (min-width: 320px) and (max-width: 767px)
+			flex: 2
+	&__image
+		position: relative
+		text-align: center
+		flex-basis: 115px 
+		height: 115px
+		background: $grey
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+	&__image-text
+		display: block
+		font: 14px "Sintony-Bold"
+		color: $white
+		line-height: 20px
+		text-transform: uppercase
+	&__image-button
+		position: absolute
+		top: -5px
+		right: -5px
+		background: $red
+		width: 32px 
+		height: 32px
+		border: 0
+		border-radius: 16px
+		cursor: pointer
+		color: $white
+		font-size: 11px
+	
+	&__name
+		font: 15px "OpenSans-Bold"
+		text-transform: uppercase
+		flex: 1
+		@media screen and (min-width: 320px) and (max-width: 540px)
+			font: 12px "OpenSans-Bold"
+			margin-top: 1em
+			white-space: nowrap
+		@media screen and (min-width: 767px)
+			margin-left: 1.813em
+	&__price
+		font: 15px "OpenSans-Bold"
+		text-transform: uppercase
+		flex: 1
+	&__total-price
+		font: 15px "OpenSans-Bold"
+		text-transform: uppercase
+		flex: 1
+	&__input
+		width: 60px
+		height: 39px
+		text-align: center
+		-webkit-appearance: none
+		border: 1px solid $light-grey
+		font: 15px "OpenSans-Bold"
+		text-transform: uppercase
+		@media screen and (min-width: 320px) and (max-width: 540px)
+			width: 40px		
+	&__input-container
+		flex: 1
+
+
+
+.summary
+	flex-basis: 270px
+	padding: 0.875em 0.875em
+	background: $pink
+	height: 80%
+	box-sizing: border-box
+	@media screen and (min-width: 320px) and (max-width: 540px)
+		flex-basis: 100%
+	&__inner
+		padding: 2em 1.625em 0 1.813em
+		border: 1px $white dashed
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			top: 50%
+			left: 0
+			bottom: 0
+			right: 0
+			height: 1px 
+			background-position: left top, left bottom, left top, right top
+			background-repeat: repeat-x, repeat-x, repeat-y, repeat-y
+			background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px
+			background-image: linear-gradient(to right, white 77%, rgba(255,255,255,0) 0%)
+			opacity: 0.5
+	
+	&__inner-headline
+		font: 22px "Times New Roman Bold" 
+		color: $white
+	&__price-list
+		margin: 1.375em 0
+
+	&__price-inner
+		display: flex
+
+	&__subtotal
+		color: $white
+		font: 15px "OpenSans-Regular"
+		line-height: 28px
+	&__subtotal-value
+		color: $white
+		font: 15px "OpenSans-Regular"
+		width: 44px
+		display: block
+		margin-left: auto
+		line-height: 28px
+	&__shipping-cost
+		color: $white
+		font: 15px "OpenSans-Regular"
+		line-height: 28px
+	&__shipping-value
+		color: $white
+		font: 15px "OpenSans-Regular"
+		width: 44px
+		display: block
+		margin-left: auto
+		line-height: 28px
+	&__tax
+		color: $white
+		font: 15px "OpenSans-Regular"
+		line-height: 28px
+	&__tax-value
+		color: $white
+		font: 15px "OpenSans-Regular"
+		width: 44px
+		display: block
+		margin-left: auto
+		line-height: 28px
+	&__price-order
+		display: flex
+
+	&__order-total
+		font: 15px "OpenSans-Bold"
+		text-transform: uppercase
+		color: $white
+	&__order-value
+		width: 44px 
+		margin-left: auto
+		font: 15px "OpenSans-Bold"
+		color: $white
+
+
+.submit-button
+	width: 197px 
+	height: 51px 
+	border-radius: 4px 
+	background: $brown
+	border: 0
+	font: 14px "OpenSans-Bold"
+	text-transform: uppercase
+	color: $white
+	margin: 2.688em 0 4.563em 0
+	cursor: pointer
+	@media screen and (min-width: 320px) and (max-width: 540px)
+		width: 100%
+
+
+
