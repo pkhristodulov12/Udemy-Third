@@ -21,12 +21,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96a820a-0d04-4fea-b7fa-3dadf0af816b" name="Default Changelist" comment="" />
+    <list default="true" id="c96a820a-0d04-4fea-b7fa-3dadf0af816b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Udemy-Second/app/js/main.js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -69,6 +72,7 @@
       <workItem from="1604602025417" duration="2783000" />
       <workItem from="1604606929465" duration="8000" />
       <workItem from="1604609330284" duration="303000" />
+      <workItem from="1604687045979" duration="9401000" />
     </task>
     <servers />
   </component>
@@ -86,7 +90,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -104,10 +108,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="403" y="295" key="#JSHint/0.0.1920.1040@0.0.1920.1040" timestamp="1604595374260" />
-    <state x="607" y="441" key="FileChooserDialogImpl" timestamp="1604606935839">
+    <state x="607" y="441" key="FileChooserDialogImpl" timestamp="1604693116248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="607" y="441" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604606935839" />
+    <state x="607" y="441" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604693116248" />
     <state x="328" y="330" key="SettingsEditor" timestamp="1604595363927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
